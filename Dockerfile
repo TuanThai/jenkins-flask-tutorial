@@ -5,5 +5,5 @@ RUN apt install -y python3-pip python3-dev build-essential
 ADD . /flask-app
 WORKDIR /flask-app
 RUN pip3 install -r requirements.txt
-ENTRYPOINT ["python"]
+ENTRYPOINT ["python3"]
 CMD ["flask-docker.py"]
